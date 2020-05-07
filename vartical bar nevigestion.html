@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My App ..menu bar</title>
+        <link rel="shortcut icon" type="image/icon" href="/home/pankaj/Desktop/vishal/image/v .jpg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+
+                margin: 0px;
+                padding: 0px;
+            }
+            ol{
+                position: fixed;
+                left: -200px;
+                margin: 0px;
+                padding:0px;
+                list-style: none;
+                width: 200px;
+                height: 640px;
+                background-color: #042331;
+                transition: all .4s ease;
+            }
+            ol li{
+                margin:30px 10px;
+                padding: 15px;
+                border-bottom: 4px solid #041731;
+                text-align: left;
+                transition: .3s;
+            }
+            ol li a{
+                position: relative;
+                left: 15px;
+                font-size: 110%;
+                text-decoration: none;
+                color: white;
+            }
+            .myapp{
+                font-size: 120%;
+                background-color: #041731;
+            }
+            ol li:hover{
+                border-left: 4px solid #041631;
+                font-size: 110%;
+            }
+
+            #vishal{
+                display: none;
+            }
+            label #open, label #close{
+                position:absolute;
+                color: white;
+                cursor: pointer;
+                background-color: #041731;
+                border-radius: 3px;
+            }
+            label #open{
+                left:40px;
+                top:25px;
+                font-size: 30px;
+                padding: 5px 10px;
+                transition: all .5s;
+            }
+            label #close{
+                z-index: 1111;
+                left: -150px;
+                top: 35px;
+                font-size: 25px;
+                color:white;
+                padding:4px 8px;
+                transition: all .5s ease;
+            }
+            #vishal:checked ~ ol{
+                left:0;
+            }
+            #vishal:checked ~ label #open{
+                left:0;
+                opacity: 0;
+                pointer-events: none;
+            }
+            #vishal:checked ~ label #close{
+                left: 150px;
+            }
+            #vishal:checked ~ section{
+                margin-left: 200px;
+            }
+            section{
+                background-image: url('/home/pankaj/Desktop/vishal/image/bc 45.jpg');
+                background-size: cover;
+                height: 100vh;
+                background-repeat: no-repeat;
+                transition: all .4s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" id="vishal"></input>
+        <label for="vishal">
+            <i class="fa fa-bars" aria-hidden="true" id="open"></i>
+            <i class="fa fa-times" aria-hidden="true" id="close"></i>
+        </label>
+            <ol>
+                <li class="myapp"><a href='#menu bar'><i class="fa fa-bars" aria-hidden="true"></i>My App</a></li>
+                <li><a href='#home'><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href='#about'><i class="fa fa-check-square-o" aria-hidden="true"></i>About</a></li>
+                <li><a href='#service'><i class="fa fa-openid" aria-hidden="true"></i>Service</a></li>
+                <li><a href='#service'><i class="fa fa-ravelry" aria-hidden="true"></i>Events</a></li>
+                <li><a href='#service'><i class="fa fa-fighter-jet" aria-hidden="true"></i>shortcut</a></li>
+            </ol>
+        <section></section>    
+    </body>
+</html>
