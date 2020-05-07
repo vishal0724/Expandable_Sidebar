@@ -78,7 +78,7 @@ label #close{
     margin-left: 200px;
 }
 section{
-    background-image: url('/home/pankaj/Desktop/vishal/image/bc 45.jpg');
+    background-image: url('bc 45.jpg');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
