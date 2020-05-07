@@ -1,0 +1,86 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+}
+ol{
+    position: fixed;
+    left: -200px;
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+    width: 200px;
+    height: 640px;
+    background-color: #042331;
+    transition: all .4s ease;
+}
+ol li{
+    margin:30px 10px;
+    padding: 15px;
+    border-bottom: 4px solid #041731;
+    text-align: left;
+    transition: .3s;
+}
+ol li a{
+    position: relative;
+    left: 15px;
+    font-size: 110%;
+    text-decoration: none;
+    color: white;
+}
+.myapp{
+    font-size: 120%;
+    background-color: #041731;
+}
+ol li:hover{
+    border-left: 4px solid #041631;
+    font-size: 110%;
+}
+
+#vishal{
+    display: none;
+}
+label #open, label #close{
+    position:absolute;
+    color: white;
+    cursor: pointer;
+    background-color: #041731;
+    border-radius: 3px;
+}
+label #open{
+    left:40px;
+    top:25px;
+    font-size: 30px;
+    padding: 5px 10px;
+    transition: all .5s;
+}
+label #close{
+    z-index: 1111;
+    left: -150px;
+    top: 35px;
+    font-size: 25px;
+    color:white;
+    padding:4px 8px;
+    transition: all .5s ease;
+}
+#vishal:checked ~ ol{
+    left:0;
+}
+#vishal:checked ~ label #open{
+    left:0;
+    opacity: 0;
+    pointer-events: none;
+}
+#vishal:checked ~ label #close{
+    left: 150px;
+}
+#vishal:checked ~ section{
+    margin-left: 200px;
+}
+section{
+    background-image: url('/home/pankaj/Desktop/vishal/image/bc 45.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    transition: all .4s ease;
+}
